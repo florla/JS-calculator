@@ -1,0 +1,128 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background-color: #ffe8ee;
+    border-radius: 20px;
+    height: 450px;
+    width: 275px;
+    padding: 50px;
+}
+
+#display{
+    border:none;
+    border-radius: 5px;
+    width: 275px;
+    height: 60px;
+    text-align: right;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif; font-family: 'Orbitron', sans-serif;
+}
+
+input:focus {
+    outline: 2px solid #F3B6C6;
+}
+
+.numbers {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+}
+
+button{
+    font-size: 30px;
+    border-radius: 50%;
+    border: none;
+    text-align: center;
+    background-color: transparent;
+}
+
+.hbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* puts numbers and operators on top of the button */
+.text { 
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+
+#clear {
+    grid-column-start: span 4;
+    border-radius: 15px;
+    background-color: #F3B6C6;
+    font-size: 20px;
+ }
+
+ i {
+    color: #F3B6C6;
+}
+
+/* tablet media query */
+@media screen and (max-width: 768px) {
+    .calculator {
+        width: 60%;
+    }
+
+    #display {
+        font-size: 20px;
+    }
+
+    .numbers {
+        gap: 5px;
+    }
+
+    button {
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    #clear {
+        font-size: 16px;
+    }
+}
+
+/* mobile media query */
+@media screen and (max-width: 480px) {
+    .calculator {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #display {
+        font-size: 18px;
+    }
+
+    .numbers {
+        gap: 5px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    #clear {
+        font-size: 14px;
+    }
+}

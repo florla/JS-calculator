@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Orbitron&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+    <main class="calculator">
+        <input type="text" id="display">
+
+        <div class="numbers">
+            <!-- when clicking clear button the clearDisplay function runs and clears the screen -->
+            <button id="clear" onclick="clearDisplay()">clear</button>
+            
+            <!-- when clicking numbers and operators the toDisplay function runs putting it in the display -->
+            <!-- buttons have icons added to display as a heart -->
+            <div id="seven">
+                <button onclick="toDisplay('7')">
+                    <div class="hbutton">
+                        <span class="text"> 7 </span>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                </button>
+            </div>
+
+            <div id="eight">
+                <button onclick="toDisplay('8')">
+                    <div class="hbutton">
+                        <span class="text"> 8 </span>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                </button>
+            </div>
+
+            <div id="nine">
+                <button onclick="toDisplay('9')">
+                    <div class="hbutton">
+                        <span class="text"> 9 </span>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                </button>
+            </div>
+
+            <div id="divide">
+                <button id="divide" onclick="toDisplay('/')">
+                    <div class="hbutton">
+                        <span class="text"> / </span>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                </button>
+            </div>
+            
+            <div id="four">
+                <button onclick="toDisplay('4')">
+                    <div class="hbutton">
+                        <span class="text"> 4 </span>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                </button>
+            </div>
+
+            <div id="five">
+                <button onclick="toDisplay('5')">
+                    <div class="hbutton">
+                        <span class="text"> 5 </span>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                </button>
+            </div>
+
+            <div id="six">
+                <button onclick="toDisplay('6')">
+                    <div class="hbutton">
+                        <span class="text"> 6 </span>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                </button>
+            </div>
+
+            <div id="multiply">
+                <button onclick="toDisplay('*')">
+                    <div class="hbutton">
+                        <span class="text"> * </span>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                </button>
+            </div>
+
+            <div id="one">
+                <button onclick="toDisplay('1')">
+                    <div class="hbutton">
+                        <span class="text"> 1 </span>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                </button>
+            </div>
+
+            <div id="two">
+                <button onclick="toDisplay('2')">
+                    <div class="hbutton">
+                        <span class="text"> 2 </span>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                </button>
+            </div>
+
+            <div id="three">
+                <button onclick="toDisplay('3')">
+                    <div class="hbutton">
+                        <span class="text"> 3 </span>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                </button>
+            </div>
+
+            <div id="subtract">
+                <button onclick="toDisplay('-')">
+                    <div class="hbutton">
+                        <span class="text"> - </span>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                </button>
+            </div>
+
+
+            <div id="zero">
+                <button onclick="toDisplay('0')">
+                    <div class="hbutton">
+                        <span class="text"> 0 </span>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                </button>
+            </div>
+
+            <div id="decimal">
+                <button id="decimal" onclick="toDisplay('.')">
+                    <div class="hbutton">
+                        <span class="text"> . </span>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                </button>
+            </div>
+
+            <!-- when clicking equals the calculate function runs putting the result in the display  -->
+            <div id="equals">
+                <button id="equal" onclick="calculate()">
+                    <div class="hbutton">
+                        <span class="text"> = </span>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                </button>
+            </div>
+
+            <div id="add">
+                <button onclick="toDisplay('+')">
+                    <div class="hbutton">
+                        <span class="text"> + </span>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                </button>
+            </div>
+            
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
